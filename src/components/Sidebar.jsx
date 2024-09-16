@@ -13,7 +13,7 @@ function Sidebar() {
   return (
     <div className="fixed top-0 left-0 w-64 h-full bg-gray-800 font-medium text-gray-300">
       <div
-        onClick={() => navigate("/dashboard")}
+        onClick={() => navigate("/")}
         className="flex items-center px-5 py-4 mt-3 space-x-2 cursor-pointer"
       >
         <img src={logo} alt="CashCanvas Logo" width={35} />
@@ -23,7 +23,7 @@ function Sidebar() {
         <ul className="space-y-5">
           <li>
             <Link
-              to="/dashboard"
+              to="/"
               className="block p-2 rounded hover:bg-gray-700 hover:text-gray-100"
             >
               Dashboard

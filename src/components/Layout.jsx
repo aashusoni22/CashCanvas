@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import { Outlet } from "react-router-dom";
 import { useTheme } from "../contexts/ThemeContext"; // No need to import ThemeProvider or ExpenseProvider
+import Dashboard from "./Dashboard";
 
 function Layout() {
   const { isDarkMode } = useTheme(); // Now useTheme will work correctly since ThemeProvider is applied globally

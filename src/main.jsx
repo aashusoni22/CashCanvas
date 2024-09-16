@@ -8,14 +8,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import {
-  Dashboard,
-  AddExpense,
-  BudgetForm,
-  ExpenseBarChart,
-  ExpenseList,
-  Summary,
-} from "./components";
+import { Dashboard, AddExpense, BudgetForm } from "./components";
 import Layout from "./components/Layout.jsx";
 import { ThemeProvider } from "./contexts/ThemeContext.jsx";
 import { ExpenseProvider } from "./contexts/ExpenseContext.jsx";
@@ -23,7 +16,7 @@ import { ExpenseProvider } from "./contexts/ExpenseContext.jsx";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/" element={<Dashboard />} />
       <Route path="/add-transaction" element={<AddExpense />} />
       <Route path="/add-budget-goal" element={<BudgetForm />} />
     </Route>
